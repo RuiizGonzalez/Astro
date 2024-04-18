@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation.astro';
 import '../styles/global.css';
 
 const pageTitle = "Sobre mi"; // declaramos varible, en Astro se puede usar HTML en cualquier parte del archivo siempre que este fuera de <html>
@@ -43,9 +45,7 @@ const goal = 3;
   
 
   <body>
-    <a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
-    <a href="/blog/">Blog</a>
+    <Navigation />
     <h1>{pageTitle}</h1>
     <h2>... ¡y mi nuevo sitio Astro!</h2>
 
@@ -72,6 +72,9 @@ const goal = 3;
     {finished && <p> !He terminado este tutorial!</p>}
 
     {goal === 3 ? <p> Mi objetivo es terminar en 3 dias</p>: <p> mi objetivo no son 3 dias.</p>}
+
+    <Footer />
+
 
 </body>
    
