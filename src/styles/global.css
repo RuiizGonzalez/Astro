@@ -1,5 +1,5 @@
 html {
-    background-color: #322C2B;
+    background-color: #1E0342;
     font-family: sans-serif;
   }
   
@@ -9,6 +9,7 @@ html {
     max-width: 80ch;
     padding: 1rem;
     line-height: 1.5;
+    color: #9AC8CD;
   }
   
   * {
@@ -21,15 +22,30 @@ html {
   }
 
   /* estilos de la barra de navegación*/
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .hamburger .line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: #0E46A3;
+  }
+  
 
 .nav-links {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: #ff9776;
+  background-color: #0E46A3;
+  color: white;
   display: none;
   margin: 0;
-}
+  }
 
 .nav-links a {
   display: block;
@@ -39,11 +55,14 @@ html {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: #9AC8CD;
 }
 
-.nav-links a:hover,
+.nav-links a:hover{
+  color: white;
+}
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: #0E46A3;
 }
 
 .expanded {
@@ -57,26 +76,15 @@ html {
     position: static;
     width: auto;
     background: none;
+    color: white;
   }
 
   .nav-links a {
     display: inline-block;
     padding: 15px 20px;
   }
+  .hamburger {
+    display: none;
+  }
 
-}
-.hamburger {
-  padding-right: 20px;
-  cursor: pointer;
-}
-
-.hamburger .line {
-  display: block;
-  width: 40px;
-  height: 5px;
-  margin-bottom: 10px;
-  background-color: #ff9776;
-}
-.hamburger {
-  display: none;
 }

@@ -12,7 +12,7 @@ const identity = {
   hobbies: ["Desarrollo", "Futbol", "Albacete"],
 }; // Declaramos variables y atributos que usaremos mas tarde.
 
-const skillColor = "#E4C59E";
+const skillColor = "#E1F7F5";
 const fontWeight = "bold";
 const textCase = "uppercase";
 
@@ -32,7 +32,7 @@ const goal = 3;
     <title>{pageTitle}</title>  <!-- para llamar a una const usamos {nombredelaconst}  -->
     <style define:vars={{skillColor,fontWeight,textCase}}>
          h1 {
-            color: #803D3B;
+            color: #0E46A3;
             font-size:  4rem;
          }
          .skill{
@@ -43,7 +43,7 @@ const goal = 3;
     </style>
   </head> 
   
-
+<base
   <body>
     <Header />
     <h1>{pageTitle}</h1>
@@ -74,7 +74,9 @@ const goal = 3;
     {goal === 3 ? <p> Mi objetivo es terminar en 3 dias</p>: <p> mi objetivo no son 3 dias.</p>}
 
     <Footer />
-
+    <script>
+			import "../scripts/menu.js"
+		</script>
 
 </body>
    
